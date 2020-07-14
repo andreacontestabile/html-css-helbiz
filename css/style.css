@@ -13,6 +13,14 @@ a {
   text-decoration: none;
 }
 
+section a::after {
+  content: "\f054";
+  margin-left: 8px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  vertical-align: middle;
+}
+
 h1 {
   font-size: 48px;
   letter-spacing: -2px;
@@ -20,6 +28,7 @@ h1 {
 
 h2 {
   font-size: 36px;
+  letter-spacing: -2px;
 }
 
 h3 {
@@ -44,6 +53,25 @@ h3 {
 
 .p-20 {
   padding: 20px;
+}
+
+.pd-r-20 {
+  padding-right: 20px;
+}
+
+.pd-l-20 {
+  padding-left: 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -190,8 +218,6 @@ h3 {
 
 }
 
-
-
 #how p {
   margin-top: 20px;
   font-size: 18px;
@@ -202,6 +228,72 @@ h3 {
   border: 1px solid red;
   height: 300px;
 
+}
+
+/* Boxes */
+
+#boxes {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+
+#boxes #box-big {
+  background-image: url('../img/scooter-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+#boxes .relative {
+  height: 100%;
+}
+
+#boxes h2 {
+  font-size: 42px;
+}
+
+#boxes p {
+  margin: 40px 0;
+}
+
+#boxes a {
+  color: #fff;
+}
+
+#boxes p, #boxes a {
+  font-size: 20px;
+}
+
+#box-left, #box-right {
+  height: 800px;
+  padding-top: 80px;
+}
+
+#box-left {
+background: rgb(65,86,106);
+background: linear-gradient(180deg, rgba(65,86,106,1) 0%, rgba(37,47,56,1) 100%);
+background-image: url('../img/iphone.png');
+background-image: url('../img/iphone.png'), linear-gradient(180deg, rgba(65,86,106,1) 0%, rgba(37,47,56,1) 100%);
+background-repeat: no-repeat;
+background-position: center bottom;
+}
+
+#box-left h2, #box-right h2 {
+  margin-bottom: 25px;
+}
+
+#box-left a:first-of-type, #box-right a:first-of-type {
+  margin-right: 20px;
+}
+
+#box-right {
+  background-image: url('../img/city.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 
