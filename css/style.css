@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+}
+
 .list-inline {
   list-style: none;
 }
@@ -19,6 +24,16 @@ a {
 .list-inline  li {
   display: inline-block;
 }
+
+.m-top-20 {
+  margin-top: 20px;
+}
+
+.m-bot-30 {
+  margin-bottom: 30px;
+}
+
+
 
 /* HEADER */
 
@@ -57,6 +72,7 @@ a {
 }
 
 .user-menu .list-inline li:first-child a {
+  color: #000;
   padding: 0 5px;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
@@ -95,4 +111,21 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero img {
+  height: 52px;
+}
+
+.hero img:first-of-type {
+  margin-right: 40px;
 }
