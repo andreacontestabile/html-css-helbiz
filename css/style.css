@@ -51,16 +51,8 @@ h3 {
   margin-bottom: 30px;
 }
 
-.p-20 {
+.pd-20 {
   padding: 20px;
-}
-
-.pd-r-20 {
-  padding-right: 20px;
-}
-
-.pd-l-20 {
-  padding-left: 20px;
 }
 
 .relative {
@@ -224,9 +216,8 @@ h3 {
 }
 
 #how .container div {
-  padding-top: 30px;
+  padding: 30px 0;
   border: 1px solid red;
-  height: 300px;
 
 }
 
@@ -240,11 +231,11 @@ h3 {
 
 
 #boxes #box-big {
+  height: 500px;
   background-image: url('../img/scooter-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
 }
 
 #boxes .relative {
@@ -279,6 +270,7 @@ background-image: url('../img/iphone.png');
 background-image: url('../img/iphone.png'), linear-gradient(180deg, rgba(65,86,106,1) 0%, rgba(37,47,56,1) 100%);
 background-repeat: no-repeat;
 background-position: center bottom;
+background-size: ;
 }
 
 #box-left h2, #box-right h2 {
@@ -296,8 +288,18 @@ background-position: center bottom;
   background-size: cover;
 }
 
+/* Media Query MOBILE */
 
 @media screen and (max-width: 767px) {
+
+  .m-bot-xs-30 {
+    margin-bottom: 30px;
+  }
+
+  .pd-xs-20 {
+    padding: 0 20px;
+  }
+
   h1 {
     font-size: 36px;
   }
@@ -313,9 +315,37 @@ background-position: center bottom;
   .showcase-item p {
     font-size: 18px;
   }
+
+  .showcase-item img, .showcase-item .item-img {
+    max-width: 100%;
+    max-height: 340px;
+    height: auto;
+  }
+
+  #how .banner {
+    background-position: 20% 100%;
+  }
+
+  #box-left, #box-right {
+    height: 600px;
+  }
+
+  #box-left {
+    background-size: 250px, 100%;
+  }
+
+  #boxes br {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+/* Media Query TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .pd-md-20 {
+    padding: 0 20px;
+  }
 
   .container {
     max-width: 100%;
@@ -323,5 +353,36 @@ background-position: center bottom;
 
   .showcase-item .item-img {
     height: 260px;
+  }
+
+  #how .banner {
+    background-position: 20% 100%;
+  }
+
+  #boxes h2 {
+    font-size: 36px;
+  }
+
+  #box-left, #box-right {
+    height: 640px;
+  }
+
+  #box-left {
+    background-size: 200px, 100%;
+  }
+
+
+}
+
+/* Media Query Desktop */
+
+@media screen and (min-width: 768px ) {
+
+  .pd-r-20 {
+    padding-right: 20px;
+  }
+
+  .pd-l-20 {
+    padding-left: 20px;
   }
 }
