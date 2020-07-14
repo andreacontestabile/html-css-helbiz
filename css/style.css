@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #212529;
 }
 
 a {
@@ -15,6 +16,14 @@ a {
 h1 {
   font-size: 48px;
   letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 .list-inline {
@@ -164,6 +173,35 @@ h1 {
   display: block;
   margin: 0 auto;
   height: 340px;
+}
+
+/* How */
+
+#how {
+  padding-bottom: 80px;
+}
+
+#how .banner {
+  height: 500px;
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+#how p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#how .container div {
+  padding-top: 30px;
+  border: 1px solid red;
+  height: 300px;
+
 }
 
 
